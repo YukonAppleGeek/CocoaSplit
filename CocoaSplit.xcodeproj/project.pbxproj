@@ -276,8 +276,8 @@
 		34AE3C43164E410D0052C95E /* XPCListenerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCListenerDelegate.m; sourceTree = "<group>"; };
 		34AE3C46164E560C0052C95E /* QTHelperProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTHelperProtocol.h; sourceTree = "<group>"; };
 		34AE3C69164F01800052C95E /* CapturedFrameProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapturedFrameProtocol.h; sourceTree = "<group>"; };
-		34AE3C6A164F04B30052C95E /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = ../../../../System/Library/Frameworks/IOSurface.framework; sourceTree = "<group>"; };
-		34AE3C6C164F04C90052C95E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = ../../../../System/Library/Frameworks/CoreVideo.framework; sourceTree = "<group>"; };
+		34AE3C6A164F04B30052C95E /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		34AE3C6C164F04C90052C95E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		34B026581712D8BA0063BB2D /* CmdLineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdLineDelegate.h; sourceTree = "<group>"; };
 		34B026591712D8BA0063BB2D /* CmdLineDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmdLineDelegate.m; sourceTree = "<group>"; };
 		34B74BC71648D23B00818DE2 /* QTCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTCapture.h; sourceTree = "<group>"; };
@@ -989,6 +989,7 @@
 					/usr/local/lib/libmp3lame.a,
 					/usr/local/lib/libswscale.a,
 					/usr/local/lib/libx264.a,
+					/usr/lib/libiconv.dylib,
 				);
 				PRODUCT_NAME = CocoaSplit;
 				SDKROOT = macosx;
@@ -1012,12 +1013,13 @@
 				INFOPLIST_FILE = "CocoaSplit/CocoaSplit-Info.plist";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
 				"OTHER_LDFLAGS[arch=*]" = (
-					/usr/local/lib/libavformat.a,
 					/usr/local/lib/libavutil.a,
+					/usr/local/lib/libavformat.a,
 					/usr/local/lib/libavcodec.a,
 					/usr/local/lib/libmp3lame.a,
 					/usr/local/lib/libswscale.a,
 					/usr/local/lib/libx264.a,
+					/usr/lib/libiconv.dylib,
 				);
 				PRODUCT_NAME = CocoaSplit;
 				SDKROOT = macosx;
@@ -1072,12 +1074,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_LDFLAGS[arch=*]" = (
-					/usr/local/lib/libavformat.a,
 					/usr/local/lib/libavutil.a,
+					/usr/local/lib/libavformat.a,
 					/usr/local/lib/libavcodec.a,
-					/usr/local/lib/libswscale.a,
 					/usr/local/lib/libmp3lame.a,
+					/usr/local/lib/libswscale.a,
 					/usr/local/lib/libx264.a,
+					/usr/lib/libiconv.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1100,12 +1103,13 @@
 				GCC_PREFIX_HEADER = "CocoaSplitCmd/CocoaSplitCmd-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				"OTHER_LDFLAGS[arch=*]" = (
-					/usr/local/lib/libavformat.a,
-					/usr/local/lib/libswscale.a,
-					/usr/local/lib/libavcodec.a,
 					/usr/local/lib/libavutil.a,
-					/usr/local/lib/libx264.a,
+					/usr/local/lib/libavformat.a,
+					/usr/local/lib/libavcodec.a,
 					/usr/local/lib/libmp3lame.a,
+					/usr/local/lib/libswscale.a,
+					/usr/local/lib/libx264.a,
+					/usr/lib/libiconv.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;

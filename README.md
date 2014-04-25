@@ -44,3 +44,7 @@ Supported Platforms
 
 So far only tested on a Retina MacbookPro running Mountain Lion (10.8)
 
+Building:
+Install [Homebrew](http://brew.sh/#install)
+Run `brew install ffmpeg --without-lame --without-faac --without-xvid && brew install imagemagick` in Terminal
+Xcode project should now compile
