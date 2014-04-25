@@ -499,7 +499,7 @@ void getAudioExtradata(char *cookie, char **buffer, size_t *size)
     
     AVPacket *p = av_malloc(sizeof (AVPacket));
     
-    memcpy(p, pkt, sizeof(AVPacket));
+    av_copy_packet(p, pkt);
     p->destruct = NULL;
     av_dup_packet(p);
 
